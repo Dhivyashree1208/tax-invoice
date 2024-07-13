@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GST Tax Invoice</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script src="assets/script.js"></script>
+</head>
+<body>
+  <div class="outer">
+    <header class="header-align">
+      <div class="logo-upload">
+        <label for="upload-file" class="file-input">
+          <input type="file" id="upload-file" />
+          Upload Logo
+        </label>
+        <p class="upload-text">240 x 240 pixels @ 72 DPI, Maximum size of 1MB.</p>
+      </div>
+      <h1>Tax Invoice</h1>
+    </header>
+    
+    <section>
+      <form id="from-form" class="form-align">
+        <div class="input-align">
+          <p>From</p>
+          <input type="text" placeholder="Your Company" />
+          <input type="text" placeholder="Your Name" />
+          <input type="text" placeholder="Company's GSTIN" />
+          <input type="text" placeholder="Company Address" />
+          <div class="address-flex">
+            <input type="text" placeholder="City" />
+            <input type="text" placeholder="State" />
+            <select name="from-country" id="country">
+              <option value="">Select Country</option>
+              <option value="India">India</option>
+              <option value="USA">USA</option>
+              <option value="England">England</option>
+              <option value="California">California</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+      </form>
+    </section>
+    
+    <section>
+      <div class="client-section">
+        <form id="bill-to-form" class="form-align">
+          <div class="input-align">
+            <p>Bill To:</p>
+            <input type="text" placeholder="Your Client's Company" />
+            <input type="text" placeholder="Client's GSTIN" />
+            <input type="text" placeholder="Client's Address" />
+            <div class="address-flex">
+              <input type="text" placeholder="City" />
+              <input type="text" placeholder="State" />
+              <select name="client-country" id="client-country">
+                <option value="">Select Country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="England">England</option>
+                <option value="California">California</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+        </form>
+        <div class="invoice-flex">
+          <div class="invoice-group">
+            <label for="invoice-number">Invoice#</label>
+            <input type="text" id="invoice-number" placeholder="INV-12">
+          </div>
+          <div class="invoice-group">
+            <label for="invoice-due-date">Invoice Due</label>
+            <input type="date" id="invoice-due-date">
+          </div>
+          <div class="invoice-group">
+            <label for="due-date">Due Date</label>
+            <input type="date" id="due-date">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
