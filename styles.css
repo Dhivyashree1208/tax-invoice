@@ -1,0 +1,85 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+  }
+  
+  .outer {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-align {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo-upload {
+    display: flex;
+    align-items: center;
+  }
+  
+  .file-input {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .upload-text {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .form-align {
+    margin-bottom: 20px;
+  }
+  
+  .input-align {
+    margin-bottom: 15px;
+  }
+  
+  .input-align p {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .input-align input, .input-align select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .address-flex {
+    display: flex;
+  }
+  
+  .invoice-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .invoice-group {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .invoice-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
