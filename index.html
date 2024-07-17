@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rough</title>
+  <link rel="stylesheet" href="assets/styles.css"> <!-- Link to your stylesheet -->
+</head>
+<body>
+  <div class="outer-container">
+    <div class="container">
+      <div class="header">
+        <label for="logo">Logo</label>
+        <input type="file" id="logo">
+        <span>Upload 240 x 240 pixels @ 72 DPI, Maximum size of 1MB.</span>
+      </div>
+      <h1>Tax Invoice</h1>
+    </div>
+
+    <div class="mid1">
+      <form>
+        <div class="section">
+          <input type="text" placeholder="Your Company" required><br>
+          <input type="text" placeholder="Your Name" required><br>
+          <input type="text" placeholder="Company's GSTIN" required><br>
+          <input type="text" placeholder="Company's Address" required><br>
+          <input type="text" placeholder="City" required><br>
+          <input type="text" placeholder="State" required><br>
+          <select>
+            <option value="India">India</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+            <option value="Europe">Europe</option>
+            <option value="Thailand">Thailand</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="Melbourne">Melbourne</option>
+          </select>
+        </div>
+      </form>
+    </div>
+
+    <div class="mid2">
+      <div class="p1">
+        <h3>Bill To</h3>
+        <input type="text" placeholder="Your Client's Company" required><br>
+        <input type="text" placeholder="Client's GSTIN" required><br>
+        <input type="text" placeholder="Client's Address" required><br>
+        <input type="text" placeholder="City" required><br>
+        <input type="text" placeholder="State" required><br>
+        <select>
+          <option value="India">India</option>
+          <option value="Pakistan">Pakistan</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+          <option value="Australia">Australia</option>
+          <option value="Europe">Europe</option>
+          <option value="Thailand">Thailand</option>
+          <option value="Netherlands">Netherlands</option>
+          <option value="Melbourne">Melbourne</option>
+        </select>
+      </div>
+      <div class="p2">
+        <label for="invoice">Invoice#</label>
+        <input type="text" id="invoice" name="invoice" pattern="[A-Za-z0-9]+" placeholder="INV-12" required><br>
+        <label for="date">Invoice Date</label>
+        <input type="date" id="date" name="date" required><br>
+        <label for="dueDate">Due Date</label>
+        <input type="date" id="dueDate" name="dueDate" required>
+      </div>
+    </div>
+
+    <div class="mid3">
+      <div class="section">
+        <label for="supply">Place Of Supply:</label>
+        <select>
+          <option value="India">India</option>
+          <option value="Pakistan">Pakistan</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+          <option value="Australia">Australia</option>
+          <option value="Europe">Europe</option>
+          <option value="Thailand">Thailand</option>
+          <option value="Netherlands">Netherlands</option>
+          <option value="Melbourne">Melbourne</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
